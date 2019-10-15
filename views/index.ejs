@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+<style>
+  h1 {color:red;}
+  li{color: blue;}
+</style>
+
+</head>
+
+<body>
+    <h1>Pokemon index page</h1>
+    <ul class="pokemon">
+        <% for(let i = 0; i < pokemon.length; i++){ %>
+            <li>
+                The
+                <a href="/pokemon/<%= i %>">
+                    <%=pokemon[i].name; %>
+                </a> is
+                    <img src=<%=pokemon[i].img %>>
+
+            </li>
+
+
+            <!-- <form action="/products/<%=1%>?_method=DELETE" method="POST">
+                <button type="Submit">Delete</button>
+            </form> -->
+
+
+
+
+            <% } %>
+    </ul>
+    <nav>
+        <a href="/pokemon/new">Create a New Product</a>
+    </nav>
+</body>
+
+</html>
