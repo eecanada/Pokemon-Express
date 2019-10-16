@@ -5,7 +5,7 @@ const Pokemon = require('./Models/pokemon.js');
 
 const PORT = 3000;
 
-
+// this links my css
 app.use(express.static('public'))
 
 // app.get('/pokemon',(req,res)=>{
