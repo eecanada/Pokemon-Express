@@ -5,6 +5,9 @@ const Pokemon = require('./Models/pokemon.js');
 
 const PORT = 3000;
 
+
+app.use(express.static('public'))
+
 // app.get('/pokemon',(req,res)=>{
 //   res.send(Pokemon)
 // })
